@@ -1,0 +1,35 @@
+/* Page System Transitions */
+.page {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page:not(.visible) {
+  display: none !important;
+}
+.page.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes orb-float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+.orb {
+  animation: orb-float 10s ease-in-out infinite;
+}
+.orb-delayed {
+  animation: orb-float 15s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+/* Shake animation for password incorrect feedback */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-6px); }
+  20%, 40%, 60%, 80% { transform: translateX(6px); }
+}
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}

@@ -1,0 +1,12 @@
+/* Glassmorphic password elements */
+.glass-input-container {
+  position: relative;
+  width: 100%;
+}
+.glass-modal {
+  background: rgba(244, 246, 250, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1), 0 1px 3px rgba(15, 23, 42, 0.05);
+}

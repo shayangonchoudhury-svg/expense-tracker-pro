@@ -1,0 +1,30 @@
+:root {
+  --bg-neu: #f4f6fa;
+  --shadow-dark: #cbd5e1;
+  --shadow-light: #ffffff;
+  --primary: #4f46e5;
+  --accent: #10b981;
+  --danger: #f43f5e;
+  --muted: #475569;
+}
+
+body {
+  background-color: var(--bg-neu) !important;
+  background-attachment: fixed;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}

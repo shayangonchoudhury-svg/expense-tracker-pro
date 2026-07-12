@@ -1,0 +1,86 @@
+/* Neumorphism Utility Classes */
+.neu-card {
+  background: var(--bg-neu);
+  box-shadow: 9px 9px 18px var(--shadow-dark), -9px -9px 18px var(--shadow-light);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.neu-convex {
+  background: linear-gradient(145deg, #ffffff, #e2e8f0);
+  box-shadow: 9px 9px 18px var(--shadow-dark), -9px -9px 18px var(--shadow-light);
+  border-radius: 1.5rem;
+}
+
+.neu-inset {
+  background: var(--bg-neu);
+  box-shadow: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
+  border-radius: 1rem;
+}
+
+.neu-btn {
+  background: var(--bg-neu);
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.neu-btn:hover {
+  box-shadow: 2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  transform: translateY(1px);
+}
+.neu-btn:active, .neu-btn.active {
+  box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+  transform: translateY(2px);
+}
+
+.neu-btn-primary {
+  background: linear-gradient(145deg, #5b52f8, #473fce);
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.neu-btn-primary:hover {
+  background: linear-gradient(145deg, #473fce, #3e37b7);
+  box-shadow: 2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+.neu-btn-primary:active {
+  background: #3e37b7;
+  box-shadow: inset 3px 3px 6px #2a2580, inset -3px -3px 6px #524be3;
+}
+
+.neu-btn-danger {
+  background: linear-gradient(145deg, #ff4b6e, #dc3955);
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.neu-btn-danger:hover {
+  background: linear-gradient(145deg, #dc3955, #c2324b);
+  box-shadow: 2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+.neu-btn-danger:active {
+  background: #c2324b;
+  box-shadow: inset 3px 3px 6px #8f2133, inset -3px -3px 6px #fa5372;
+}
+
+.neu-input {
+  background: var(--bg-neu) !important;
+  box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0.75rem;
+  outline: none !important;
+  transition: all 0.2s ease-in-out;
+}
+.neu-input:focus {
+  box-shadow: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light), 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+}
+
+.neu-card-dark {
+  background: #1e293b;
+  box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px #ffffff;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
